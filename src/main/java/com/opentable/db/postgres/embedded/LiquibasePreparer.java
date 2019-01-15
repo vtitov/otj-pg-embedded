@@ -15,10 +15,14 @@ package com.opentable.db.postgres.embedded;
 
 import liquibase.Contexts;
 import liquibase.Liquibase;
+import liquibase.LabelExpression
 import liquibase.database.Database;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
 import liquibase.resource.ClassLoaderResourceAccessor;
+import liquibase.resource.CompositeResourceAccessor;
+import liquibase.resource.FileSystemResourceAccessor;
+import liquibase.resource.ResourceAccessor;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
